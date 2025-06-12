@@ -9,16 +9,25 @@ export default function Home() {
       <section className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-2">Timilehin Makanjuola</h1>
         <p className="text-lg text-gray-700">
-          Full-Stack Software Engineer | JavaScript, Python, Java | MSc Computer Science
+          Full-Stack Software Engineer | JavaScript, Python, Java | MSc Computer
+          Science
         </p>
         <div className="flex justify-center gap-4 mt-4">
           <a href="mailto:makanjuola.timi@gmail.com" aria-label="Email">
             <Mail className="w-6 h-6" />
           </a>
-          <a href="https://github.com/Timelaying" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Timelaying"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github className="w-6 h-6" />
           </a>
-          <a href="https://www.linkedin.com/in/makanjuola-timilehin-17896a19a" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/makanjuola-timilehin-17896a19a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Linkedin className="w-6 h-6" />
           </a>
         </div>
@@ -29,11 +38,19 @@ export default function Home() {
         <div className="grid gap-6 md:grid-cols-2">
           <Card>
             <CardContent className="p-4">
-              <h3 className="text-xl font-bold">Nested Comment & Like System</h3>
+              <h3 className="text-xl font-bold">
+                Financial Investment Assistant
+              </h3>
               <p className="text-gray-700 mt-2">
-                Built a scalable comment and like system with nested replies using React, Node.js, and PostgreSQL.
+                Built a personalized investment assistant that helps users
+                analyze financial data and simulate investment strategies using
+                real-time market info.
               </p>
-              <a href="https://github.com/Timelaying" className="text-blue-600 mt-2 inline-block" target="_blank">
+              <a
+                href="https://github.com/Timelaying"
+                className="text-blue-600 mt-2 inline-block"
+                target="_blank"
+              >
                 View on GitHub
               </a>
             </CardContent>
@@ -41,11 +58,19 @@ export default function Home() {
 
           <Card>
             <CardContent className="p-4">
-              <h3 className="text-xl font-bold">Secure Auth System</h3>
+              <h3 className="text-xl font-bold">
+                Golb – Blog & Social Platform
+              </h3>
               <p className="text-gray-700 mt-2">
-                Developed a modular authentication system with JWT, refresh tokens, and secure session handling.
+                Developed a full-stack social blogging platform with secure
+                auth, dynamic profiles, nested comments, and real-time
+                interaction features.
               </p>
-              <a href="https://github.com/Timelaying" className="text-blue-600 mt-2 inline-block" target="_blank">
+              <a
+                href="https://github.com/Timelaying"
+                className="text-blue-600 mt-2 inline-block"
+                target="_blank"
+              >
                 View on GitHub
               </a>
             </CardContent>

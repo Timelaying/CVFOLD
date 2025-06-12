@@ -68,7 +68,7 @@ export default function Home() {
       <section className="text-center">
         <h2 className="text-2xl font-semibold mb-2">Download My CV</h2>
         <Button asChild className="mt-2">
-          <a href="/Timilehin_Makanjuola_CV.pdf" download>
+          <a href="/TIMILEHIN MAKANJUOLA (1).pdf" download>
             Download CV
           </a>
         </Button>

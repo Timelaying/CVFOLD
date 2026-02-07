@@ -187,7 +187,7 @@ export default function Home() {
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button asChild>
-              <a href="/TIMILEHIN-MAKANJUOLA.pdf" download>
+              <a href="/TIMILEHIN MAKANJUOLA.pdf" download>
                 Download CV
               </a>
             </Button>

@@ -368,7 +368,7 @@ export default function Home() {
               <a href="mailto:makanjuola.timi@gmail.com">Contact Me</a>
             </Button>
             <Button asChild variant="outline">
-              <a href="/TIMILEHIN-MAKANJUOLA.pdf" download>
+              <a href="/TIMILEHIN MAKANJUOLA.pdf" download>
                 Download CV
               </a>
             </Button>

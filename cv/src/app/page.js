@@ -59,7 +59,7 @@ const experiences = [
   {
     role: "Senior Backend Engineer",
     company: "TrendMind",
-    timeline: "2023 – Present",
+    timeline: "Feb 2025 – Present",
     highlights: [
       "Improved API response times by 25% through query optimization and targeted caching.",
       "Designed microservices for event-driven data ingestion and ML personalization workflows.",
@@ -69,7 +69,7 @@ const experiences = [
   {
     role: "Backend Engineer",
     company: "Dreamlines GmbH",
-    timeline: "2021 – 2023",
+    timeline: "Dec 2021 – Nov 2024",
     highlights: [
       "Led a 5-engineer squad delivering booking platform enhancements and partner integrations.",
       "Reduced operational incidents by 30% with automated rollback and monitoring playbooks.",
@@ -79,7 +79,7 @@ const experiences = [
   {
     role: "Software Engineer",
     company: "AFPRINT",
-    timeline: "2019 – 2021",
+    timeline: "Nov2020 – Dec 2021",
     highlights: [
       "Built workflow automation tools that shortened production turnaround by 18%.",
       "Integrated payment and invoicing APIs to streamline customer operations.",
@@ -89,7 +89,7 @@ const experiences = [
   {
     role: "Software Engineer",
     company: "Alphamead Technologies",
-    timeline: "2017 – 2019",
+    timeline: "Jul 2019 – Sep 2020",
     highlights: [
       "Delivered backend services for enterprise clients focused on data processing and reporting.",
       "Implemented role-based access control and audit logging for compliance needs.",

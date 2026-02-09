@@ -101,7 +101,7 @@ const experiences = [
 const skills = [
   {
     category: "Programming Languages",
-    items: ["JavaScript/TypeScript", "Python", "Java", "Go"],
+    items: ["JavaScript/TypeScript", "Python", "Java","C#","C++","C", "Go"],
   },
   {
     category: "Back-End & Architecture",

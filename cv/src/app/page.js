@@ -9,81 +9,88 @@ import {
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin } from "lucide-react";
 
+const CV_PATH = "/Timilehin_Makanjuola_CV.pdf";
+
+// Each project links to its own repository. Add a `demo` URL only once the
+// project is actually deployed; the button is hidden when it is missing.
 const projects = [
+  {
+    title: "Golb – Blog Platform",
+    description:
+      "Full-stack blog built with Next.js, containerised with Docker, with Kubernetes manifests, Cypress end-to-end tests and GitHub Actions workflows.",
+    tech: ["Next.js", "Docker", "Kubernetes", "Cypress"],
+    github: "https://github.com/Timelaying/Golb-setup",
+  },
+  {
+    title: "Shopta – Shopping Taxi Platform",
+    description:
+      "Shopping and taxi platform built as microservices: a real-time socket server, route optimiser, promotions and trip analytics services, run with Docker Compose and CI.",
+    tech: ["TypeScript", "Microservices", "Docker", "GitHub Actions"],
+    github: "https://github.com/Timelaying/Shopta",
+  },
+  {
+    title: "Job Tracker API (Go + GraphQL)",
+    description:
+      "Job-application tracker API in Go using gqlgen and PostgreSQL, with migrations, filtering, tests and a GraphQL playground.",
+    tech: ["Go", "GraphQL", "PostgreSQL", "Docker"],
+    github: "https://github.com/Timelaying/Project_Go_Graphql_Postgres",
+  },
+  {
+    title: "DjRe – React + Django",
+    description:
+      "Web application with a Django backend and a React frontend.",
+    tech: ["Python", "Django", "React"],
+    github: "https://github.com/Timelaying/DjRe",
+  },
+  {
+    title: "EcSa – Ecommerce Dashboard",
+    description:
+      "Admin dashboard for managing products, categories, orders and inventory, built with Next.js and Prisma.",
+    tech: ["Next.js", "TypeScript", "Prisma", "Docker"],
+    github: "https://github.com/Timelaying/EcSa",
+  },
   {
     title: "Financial Investment Assistant",
     description:
-      "AI-assisted finance companion that analyzes market signals, simulates portfolio scenarios, and explains recommendations in plain language.",
-    tech: ["Python", "LLMs", "Streamlit", "Market APIs"],
-    github: "https://github.com/Timelaying",
-    demo: "https://cvfold.vercel.app",
-  },
-  {
-    title: "Golb – Blog & Social Platform",
-    description:
-      "Full-stack social blogging platform with secure auth, dynamic profiles, nested comments, and real-time interaction features.",
-    tech: ["React", "Node.js", "PostgreSQL", "JWT"],
-    github: "https://github.com/Timelaying",
-  },
-  {
-    title: "Project Go GraphQL Postgres",
-    description:
-      "GraphQL API service for commerce data, designed with a domain-driven schema and optimized query resolvers.",
-    tech: ["Go", "GraphQL", "PostgreSQL", "Docker"],
-    github: "https://github.com/Timelaying",
-  },
-  {
-    title: "Shopta",
-    description:
-      "Inventory and order management system that automates stock updates, purchase workflows, and reporting dashboards.",
-    tech: ["Django", "React", "REST APIs", "Celery"],
-    github: "https://github.com/Timelaying",
-  },
-  {
-    title: "DJRe",
-    description:
-      "Reusable Django REST toolkit with authentication, pagination, and performance-friendly query utilities.",
-    tech: ["Python", "Django", "DRF", "JWT"],
-    github: "https://github.com/Timelaying",
-  },
-  {
-    title: "EcSa",
-    description:
-      "Energy consumption analytics prototype that visualizes usage trends and flags anomalies for facility teams.",
-    tech: ["Java", "Spring Boot", "PostgreSQL", "Charts"],
-    github: "https://github.com/Timelaying",
+      "Streamlit application for portfolio management, market news and real-time stock monitoring, with a Dockerfile and a CI workflow.",
+    tech: ["Python", "Streamlit", "Docker", "GitHub Actions"],
+    github: "https://github.com/Timelaying/Financial-investment-assistant",
   },
 ];
 
+// Employment history follows the current CV.
 const experiences = [
   {
-    role: "Senior Backend Engineer",
-    company: "TrendMind",
-    timeline: "Feb 2025 – Present",
+    role: "Analyst Developer",
+    company: "Hastings Direct",
+    timeline: "Apr 2026 – Present",
     highlights: [
-      "Improved API response times by 25% through query optimization and targeted caching.",
-      "Designed microservices for event-driven data ingestion and ML personalization workflows.",
-      "Partnered with product leads to deliver reliability and observability upgrades (SLOs, tracing).",
+      "Develop and maintain FNOL functionality in Guidewire ClaimCenter, delivering new features and business-required changes for digital claims processing.",
+      "Build and support integrations between customer-facing mobile applications and Guidewire using REST APIs, Edge APIs and Azure API services.",
+      "Implement Gosu business rules for claims validation and processing, and use MSSQL to validate and transfer claims data across enterprise systems.",
+      "Refactor legacy code, document technical debt, and mentor junior developers on implementation, debugging and testing.",
     ],
   },
   {
-    role: "Backend Engineer",
+    role: "Software Engineer",
     company: "Dreamlines GmbH",
-    timeline: "Dec 2021 – Nov 2024",
+    timeline: "Dec 2021 – Apr 2026",
     highlights: [
-      "Led a 5-engineer squad delivering booking platform enhancements and partner integrations.",
-      "Reduced operational incidents by 30% with automated rollback and monitoring playbooks.",
-      "Modernized legacy services into containerized, cloud-ready deployments.",
+      "Spearheaded development of scalable web features, increasing delivery speed by 30%.",
+      "Reduced API latency through database indexing and caching strategies.",
+      "Built a fault-tolerant microservice for multi-channel payment processing.",
+      "Led code reviews and mentored junior engineers; contributed to CI/CD pipelines and Agile delivery.",
     ],
   },
   {
     role: "Software Engineer",
     company: "AFPRINT",
-    timeline: "Nov2020 – Dec 2021",
+    timeline: "Nov 2020 – Dec 2021",
     highlights: [
-      "Built workflow automation tools that shortened production turnaround by 18%.",
-      "Integrated payment and invoicing APIs to streamline customer operations.",
-      "Collaborated with design teams to ship responsive customer portals.",
+      "Led a team of five developers building a financial management platform.",
+      "Designed and deployed RESTful APIs with a focus on availability and security.",
+      "Applied test-driven development with JUnit and Cypress, expanding automated test coverage.",
+      "Translated complex business requirements into user stories and application features.",
     ],
   },
   {
@@ -91,43 +98,46 @@ const experiences = [
     company: "Alphamead Technologies",
     timeline: "Jul 2019 – Sep 2020",
     highlights: [
-      "Delivered backend services for enterprise clients focused on data processing and reporting.",
-      "Implemented role-based access control and audit logging for compliance needs.",
-      "Introduced CI/CD workflows to reduce release cycle time.",
+      "Developed a microservice supporting business process management systems.",
+      "Built applications with Django and Java, including an electronic voting system.",
+      "Created and tested a mock aptitude test application that simulated examination conditions.",
     ],
   },
 ];
 
 const skills = [
   {
-    category: "Programming Languages",
-    items: ["JavaScript/TypeScript", "Python", "Java","C#","C++","C", "Go"],
+    category: "Languages",
+    items: ["Java", "Gosu", "JavaScript", "TypeScript", "Python", "SQL", "Go", "C#", "C/C++"],
   },
   {
-    category: "Back-End & Architecture",
+    category: "Backend & Full Stack",
     items: [
-      "RESTful APIs",
+      "Node.js",
+      "Express.js",
+      "React",
+      "Next.js",
+      "Django",
+      "REST APIs",
       "Microservices",
-      "Authentication (JWT, OAuth)",
-      "Event-driven systems",
-      "Performance optimization",
+      "JWT authentication",
     ],
   },
   {
     category: "Databases",
-    items: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    items: ["MSSQL", "PostgreSQL", "MongoDB", "MySQL"],
   },
   {
-    category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "Helm", "Terraform"],
+    category: "Cloud & Delivery",
+    items: ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Helm", "CI/CD", "Git/GitHub"],
   },
   {
     category: "Testing & Quality",
-    items: ["JUnit", "Mockito", "Cypress", "TDD"],
+    items: ["JUnit", "Mockito", "Cypress", "Splunk", "TDD", "BDD", "Code reviews", "Agile/Scrum"],
   },
   {
-    category: "Engineering Practices",
-    items: ["CI/CD", "Agile/Scrum", "Observability", "Code reviews"],
+    category: "Insurance & Integration",
+    items: ["Guidewire ClaimCenter", "FNOL", "Edge APIs", "Azure APIs", "SOAP", "JSON-RPC"],
   },
 ];
 
@@ -137,8 +147,12 @@ const education = [
     detail: "University of Leicester · May 2024",
   },
   {
-    title: "CNSS Certification",
-    detail: "Certified Network Security Specialist",
+    title: "OWASP API Security Top 10",
+    detail: "APIsec University · 2026",
+  },
+  {
+    title: "Certified Network Security Specialist (CNSS)",
+    detail: "International Cybersecurity Institute · 2020",
   },
 ];
 
@@ -148,15 +162,14 @@ export default function Home() {
       <section className="px-6 py-16">
         <div className="mx-auto max-w-5xl text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
-            Backend Engineering • Cloud-Native Systems
+            Backend • Full Stack • Enterprise Integration
           </p>
           <h1 className="text-4xl font-bold mt-4">Timilehin Makanjuola</h1>
           <p className="text-lg text-gray-700 mt-4">
-            Backend-focused software engineer with 5+ years of experience
-            building microservices, cloud-native platforms, and high-performance
-            APIs. I specialize in Python, JavaScript, and Java, delivering
-            reliable systems that improve speed, scalability, and customer
-            outcomes.
+            Software engineer with experience since 2019 delivering backend
+            services, full-stack web applications and enterprise integrations
+            across insurance, financial systems and digital platforms. Based in
+            Leicester, UK.
           </p>
           <div className="flex justify-center gap-4 mt-6">
             <a
@@ -187,7 +200,7 @@ export default function Home() {
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button asChild>
-              <a href="/TIMILEHIN MAKANJUOLA.pdf" download>
+              <a href={CV_PATH} download>
                 Download CV
               </a>
             </Button>
@@ -202,18 +215,19 @@ export default function Home() {
         <div className="mx-auto max-w-5xl">
           <h2 className="text-2xl font-semibold mb-4">Professional Profile</h2>
           <p className="text-gray-700">
-            I’m passionate about building resilient backend systems that power
-            modern products. My work spans scalable APIs, event-driven
-            microservices, and cloud-ready deployments. I focus on delivering
-            measurable performance gains, improving reliability, and building
-            teams that ship confidently.
+            I build backend services, REST APIs and full-stack applications, and
+            integrate them with enterprise systems. My experience includes
+            leading a team of five developers, mentoring junior engineers,
+            building payment microservices and improving application
+            performance. I currently work on Guidewire ClaimCenter FNOL and
+            digital claims integrations in an Agile insurance environment.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             <Card>
               <CardContent className="p-4">
                 <p className="text-sm text-gray-500">Expertise</p>
                 <p className="text-lg font-semibold">
-                  Microservices & API Platforms
+                  Backend services & REST APIs
                 </p>
               </CardContent>
             </Card>
@@ -221,15 +235,15 @@ export default function Home() {
               <CardContent className="p-4">
                 <p className="text-sm text-gray-500">Focus</p>
                 <p className="text-lg font-semibold">
-                  Cloud-native, observable systems
+                  Insurance and enterprise integration
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-4">
-                <p className="text-sm text-gray-500">Impact</p>
+                <p className="text-sm text-gray-500">Practice</p>
                 <p className="text-lg font-semibold">
-                  Performance, reliability, and delivery
+                  Code review, testing and mentoring
                 </p>
               </CardContent>
             </Card>
@@ -290,7 +304,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View on GitHub
+                      View code
                     </a>
                     {project.demo ? (
                       <a
@@ -342,7 +356,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-6">
             Education & Certifications
           </h2>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-3">
             {education.map((item) => (
               <Card key={item.title}>
                 <CardContent className="p-4">
@@ -359,16 +373,15 @@ export default function Home() {
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="text-2xl font-semibold">Let’s Build Together</h2>
           <p className="text-gray-700 mt-3">
-            Open to backend engineering roles, consulting, and collaborations on
-            cloud-native products. Reach out to discuss how I can help your team
-            deliver reliable software.
+            Open to Senior Software Engineer and Senior Developer roles across
+            backend, full-stack and integration teams.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             <Button asChild>
               <a href="mailto:makanjuola.timi@gmail.com">Contact Me</a>
             </Button>
             <Button asChild variant="outline">
-              <a href="/TIMILEHIN MAKANJUOLA.pdf" download>
+              <a href={CV_PATH} download>
                 Download CV
               </a>
             </Button>

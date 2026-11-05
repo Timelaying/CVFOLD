@@ -12,23 +12,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Timilehin Makanjuola | Backend & Cloud-Native Engineer",
+  title: "Timilehin Makanjuola | Software Engineer: Backend, Full Stack and Enterprise Integration",
   description:
-    "Backend-focused software engineer with 5+ years of experience building microservices, cloud-native platforms, and high-performance APIs.",
+    "Software engineer with experience since 2019 delivering backend services, full-stack web applications and enterprise integrations across insurance, financial systems and digital platforms.",
   metadataBase: new URL("https://cvfold.vercel.app"),
   openGraph: {
-    title: "Timilehin Makanjuola | Backend & Cloud-Native Engineer",
+    title: "Timilehin Makanjuola | Software Engineer: Backend, Full Stack and Enterprise Integration",
     description:
-      "Explore projects, experience, and credentials in backend engineering, microservices, and cloud-native development.",
+      "Explore projects, experience and credentials in backend services, full-stack development and enterprise integration.",
     url: "https://cvfold.vercel.app",
     siteName: "CVFOLD",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Timilehin Makanjuola | Backend & Cloud-Native Engineer",
+    title: "Timilehin Makanjuola | Software Engineer: Backend, Full Stack and Enterprise Integration",
     description:
-      "Explore projects, experience, and credentials in backend engineering, microservices, and cloud-native development.",
+      "Explore projects, experience and credentials in backend services, full-stack development and enterprise integration.",
   },
   icons: {
     icon: "/favicon.ico",

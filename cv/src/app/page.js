@@ -48,6 +48,7 @@ const projects = [
       "Online store for digital products with Stripe checkout, emailed receipts, time-limited download links and a password-protected admin area, built with Next.js, Prisma and PostgreSQL.",
     tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe"],
     github: "https://github.com/Timelaying/EcSa",
+    demo: "https://ecsa-mu.vercel.app",
   },
   {
     title: "Financial Investment Assistant",

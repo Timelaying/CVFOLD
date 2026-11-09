@@ -43,11 +43,12 @@ const projects = [
     github: "https://github.com/Timelaying/DjRe",
   },
   {
-    title: "EcSa – Ecommerce Dashboard",
+    title: "EcSa – Digital Products Store",
     description:
-      "Admin dashboard for managing products, categories, orders and inventory, built with Next.js and Prisma.",
-    tech: ["Next.js", "TypeScript", "Prisma", "Docker"],
+      "Online store for digital products with Stripe checkout, emailed receipts, time-limited download links and a password-protected admin area, built with Next.js, Prisma and PostgreSQL.",
+    tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe"],
     github: "https://github.com/Timelaying/EcSa",
+    demo: "https://ecsa-mu.vercel.app",
   },
   {
     title: "Financial Investment Assistant",

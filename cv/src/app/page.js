@@ -56,6 +56,7 @@ const projects = [
       "Streamlit application for portfolio management, market news and real-time stock monitoring, with a Dockerfile and a CI workflow.",
     tech: ["Python", "Streamlit", "Docker", "GitHub Actions"],
     github: "https://github.com/Timelaying/Financial-investment-assistant",
+    demo: "https://financial-investmen-qupfs3iy67tavbg6vch69k.streamlit.app/",
   },
 ];
 

@@ -34,6 +34,7 @@ const projects = [
       "Job-application tracker API in Go using gqlgen and PostgreSQL, with migrations, filtering, tests and a GraphQL playground.",
     tech: ["Go", "GraphQL", "PostgreSQL", "Docker"],
     github: "https://github.com/Timelaying/Project_Go_Graphql_Postgres",
+    demo: "https://go-graphql-jobs.onrender.com",
   },
   {
     title: "DjRe – React + Django",

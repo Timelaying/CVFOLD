@@ -20,6 +20,7 @@ const projects = [
       "Full-stack blog built with Next.js, containerised with Docker, with Kubernetes manifests, Cypress end-to-end tests and GitHub Actions workflows.",
     tech: ["Next.js", "Docker", "Kubernetes", "Cypress"],
     github: "https://github.com/Timelaying/Golb-setup",
+    demo: "https://golb-social.vercel.app",
   },
   {
     title: "Shopta – Shopping Taxi Platform",

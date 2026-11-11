@@ -42,6 +42,7 @@ const projects = [
       "Web application with a Django backend and a React frontend.",
     tech: ["Python", "Django", "React"],
     github: "https://github.com/Timelaying/DjRe",
+    demo: "https://djre-notes.vercel.app",
   },
   {
     title: "EcSa – Digital Products Store",

@@ -28,6 +28,7 @@ const projects = [
       "Shopping and taxi platform built as microservices: a real-time socket server, route optimiser, promotions and trip analytics services, run with Docker Compose and CI.",
     tech: ["TypeScript", "Microservices", "Docker", "GitHub Actions"],
     github: "https://github.com/Timelaying/Shopta",
+    demo: "https://shopta-app.vercel.app",
   },
   {
     title: "Job Tracker API (Go + GraphQL)",
